@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../auth/auth_service.dart';
 import '../../wardrobe/screens/wardrobe_screen.dart';
 import '../../garment/screens/add_garment_screen.dart';
+import '../../profile/screens/profile_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -22,7 +23,7 @@ class _HomeScreenState extends State<HomeScreen> {
     const WardrobeScreen(),
     const _PlaceholderScreen(label: 'Añadir prenda'),
     const _PlaceholderScreen(label: 'Looks'),
-    const _PlaceholderScreen(label: 'Perfil'),
+    const ProfileScreen(),
   ];
 
   Future<void> _logout() async {
